@@ -1,0 +1,16 @@
+# This is where I define default values for color picker widget
+# Why?
+# In admin generator, generated widget will for all color pickers use these values. 
+# Of course, you can for each admin form for each module add your own values
+# but, if you like, you can use same settings for all color picker widgets, and that can be just fine.
+default:
+  dmColorPickerPlugin:
+    # This is attribute for input form field, max chars that can be typed in
+    default_maxlength:      7
+    # In admin, widget widhts are 100%. You can override this and set width trough CSS style
+    defualt_widget_width:          100px
+    # show_elements: all, input, color -> choose one that suits your needs the best, what will be shown as picker
+    # input -> input field only
+    # color -> input field is hidden, selected color in box is shown
+    # all -> shows booth input field and colored box
+    show_elements:          all 
