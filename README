@@ -1,0 +1,36 @@
+dmColorPickerPlugin is missing add on for Diem. It provides you with a nice widget for picking up a HEX color.
+
+It is mentioned for Diem 5.1.4, which is now on Github, and Diem has to be fixed to work with this plugin. I have created the fix, hope it will get implemented. :)
+
+Complete code is commented in order to explain the mechanic, how to create this kind of input wrapper in order for you to learn how to implement jQuery input widgets so it can be used in every aspect of Diem (front, admin).
+
+Now, read the code, line by line, PHP and JavaScript, for any questions, contact me at thecelavi@gmail.com.
+
+Where can be used?
+---------------
+It is mentioned to be used for the admin part of the application, but since it contains widgets, it is fully compatible for front part of the application.
+
+How to use it?
+---------
+In your schema.yml add "extra" with value "colorpicker" for the admin.
+
+For the front application, use provided widget, and that's all
+
+How does it works?
+---------
+Simple, wraps Symfony input field with color picker. Simple, huh? You can use a provided Validator as well to check if color HEX code is the right one.
+
+What is different?
+---------
+Everything! The concept is different - javascript is just a presentation of Symfony field, we do not touch that, we are just presenting a new UI. 
+
+To whom to say thanks?
+---------
+To TheCelavi :)
+And this guy too: http://www.eyecon.ro/colorpicker/
+
+And you are most welcome!
+
+TODO?
+---------
+To create more widgets like this one!
