@@ -47,16 +47,13 @@ class sfWidgetFormColorPicker extends sfWidgetFormInputText {
     
     public function getJavaScripts() {     
         return array(
-            'lib.maxzindex', // This is added script to the Diem dev, by me, do not know if it will be implemented
+            'lib.max-z-index',
             '/dmColorPickerPlugin/js/jquery.colorpicker.js',
             '/dmColorPickerPlugin/js/dmColorPickerPlugin.js'
         );        
     }
     
     public function getStylesheets() {        
-        // This is the reason for Diem to be fixed
-        // I have send the fix
-        // Hope it will get implemented
         return array_merge(parent::getStylesheets(), array(
             '/dmColorPickerPlugin/css/jquery.colorpicker.css'=>null
         ));
